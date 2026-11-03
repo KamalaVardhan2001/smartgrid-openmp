@@ -1,0 +1,24 @@
+Sequential smart-grid analysis
+Dataset: E:\SmartGrid_OpenMP\experiments\meters_1024\data\smart_meter_data.csv
+Loading and validating data...
+Meters: 1024
+Readings: 2064384
+Model: ridge autoregression, 12 lags
+Split: chronological 70/15/15
+Forecast: next 5-minute sample
+Processing meters sequentially...
+
+COMPLETED
+Data load time: 12.838358 s
+Compute time (fit + evaluation + statistics): 0.274732 s
+Post-compute export time: 3.114389 s
+Evaluated forecasts: 619520
+Evaluated forecasts per compute second: 2254995.135264
+AR test MAE: 73.095809 W
+AR test RMSE: 169.210064 W
+Persistence test MAE: 62.582771 W
+Persistence test RMSE: 194.264514 W
+Overload readings: 8691
+Voltage alert readings: 3066
+Saved three CSV files in results/.
+This is one sequential run, not a final parallel benchmark.

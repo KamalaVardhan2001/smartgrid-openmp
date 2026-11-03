@@ -1,0 +1,8 @@
+Memory is sampled every 50 ms from a separate benchmark process for each workload.
+Scope includes dataset load, all thread configurations, correctness and output.
+The Windows API supplies current/peak working set and private commit; private commit is not resident RAM.
+Sampled peaks may miss very brief events; reported lifetime peaks apply through the sampled time.
+These instrumented runs use 3 trials and 1 pass and are for memory only, not replacements for the original timing study.
+Separate sequential runs export forecasting accuracy after memory sampling ends; their timings are not combined with the original study.
+Bandwidth is a separate array-triad effective useful-byte rate, not application DRAM traffic.
+Original datasets, timing results and source files were not modified.

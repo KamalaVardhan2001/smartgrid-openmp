@@ -1,0 +1,19 @@
+Separate OpenMP array-triad benchmark
+Array footprint: 96 MiB
+Useful bytes per element: 24
+This is effective array bandwidth, not measured application DRAM traffic.
+Completed bandwidth trial 1/7
+Completed bandwidth trial 2/7
+Completed bandwidth trial 3/7
+Completed bandwidth trial 4/7
+Completed bandwidth trial 5/7
+Completed bandwidth trial 6/7
+Completed bandwidth trial 7/7
+sequential: 13.4798 effective GB/s
+openmp_1: 13.6884 effective GB/s
+openmp_2: 15.6072 effective GB/s
+openmp_4: 18.6674 effective GB/s
+openmp_8: 15.3546 effective GB/s
+openmp_12: 14.4374 effective GB/s
+openmp_16: 13.3282 effective GB/s
+All array checks passed. Saved three bandwidth files.

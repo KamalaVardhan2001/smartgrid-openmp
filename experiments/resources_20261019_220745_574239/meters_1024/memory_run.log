@@ -1,0 +1,31 @@
+Smart Grid Sequential vs OpenMP Benchmark
+Loading data once...
+Meters: 1024 | Readings: 2064384 | Logical processors exposed: 16
+Trials per configuration: 3 | Workload passes per trial: 1
+A pass refits and evaluates all meters on the same fixed dataset.
+Checking outputs and warming every configuration...
+sequential: PASS (actual threads 1)
+openmp_1: PASS (actual threads 1)
+openmp_2: PASS (actual threads 2)
+openmp_4: PASS (actual threads 4)
+openmp_8: PASS (actual threads 8)
+openmp_12: PASS (actual threads 12)
+openmp_16: PASS (actual threads 16)
+Completed trial 1/3
+Completed trial 2/3
+Completed trial 3/3
+
+RESULTS (median compute time per complete workload pass)
+Configuration       Seconds     Speedup    Efficiency
+sequential         0.096508       1.000      100.000%
+openmp_1           0.096627       0.999       99.877%
+openmp_2           0.055531       1.738       86.895%
+openmp_4           0.027053       3.567       89.184%
+openmp_8           0.024502       3.939       49.234%
+openmp_12          0.019693       4.901       40.838%
+openmp_16          0.016929       5.701       35.631%
+
+All correctness checks passed. Saved four benchmark files in results/.
+Speedup below 1 means slower than sequential; retain every measured configuration.
+CPU percent is normalized to all exposed logical processors, not only the requested threads.
+CSV load/export are excluded. Memory footprint and DRAM bandwidth are not measured yet.

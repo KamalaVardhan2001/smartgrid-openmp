@@ -1,0 +1,9 @@
+source=synthetic
+version=stage1-v1
+meters=64
+days=7
+seed=42
+interval_seconds=300
+records=129024
+row_order=meter_then_sample
+energy_convention=constant_power_over_interval_beginning_at_sample

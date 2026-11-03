@@ -1,0 +1,7 @@
+os=Windows
+os_release=11
+os_version=10.0.26300
+python=3.14.6
+processor=Intel64 Family 6 Model 154 Stepping 3, GenuineIntel
+power_mode=record_manually
+charger_state=record_manually

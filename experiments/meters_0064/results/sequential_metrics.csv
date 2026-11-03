@@ -1,0 +1,17 @@
+metric,value,unit
+meters,64,count
+readings,129024,count
+evaluated_forecasts,38720,count
+test_forecasts,19392,count
+dataset_load_seconds,0.8747481,s
+compute_seconds,0.0099389,s
+post_compute_export_seconds,0.2354864,s
+evaluated_forecasts_per_compute_second,3895803.35852,forecasts/s
+validation_mae,71.5608059157,W
+test_mae,73.4220931171,W
+test_rmse,169.747982886,W
+persistence_test_mae,63.1598745901,W
+persistence_test_rmse,194.042644627,W
+overload_readings,508,count
+voltage_alert_readings,189,count
+dataset_fnv1a64_normalized_rows,893e05134cae26ee,hex

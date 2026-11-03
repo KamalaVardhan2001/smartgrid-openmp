@@ -1,0 +1,4 @@
+meters,samples,sample_interval_seconds,max_sampled_working_set_MiB,max_reported_peak_working_set_MiB,max_sampled_private_commit_MiB,backend,scope
+64,15,0.05,17.45703125,17.48828125,13.234375,Windows_GetProcessMemoryInfo,entire_benchmark_process_all_configurations_load_compute_export
+256,53,0.05,51.625,51.65234375,47.47265625,Windows_GetProcessMemoryInfo,entire_benchmark_process_all_configurations_load_compute_export
+1024,227,0.05,188.359375,188.42578125,184.51171875,Windows_GetProcessMemoryInfo,entire_benchmark_process_all_configurations_load_compute_export

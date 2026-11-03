@@ -1,0 +1,67 @@
+
+2026-10-19T21:42:11.582394 E:\SmartGrid_OpenMP\simulator.exe 256 7 42
+Generating SYNTHETIC smart-meter data
+Meters: 256
+Simulated days per meter: 7
+Sampling interval: 300 seconds (5 minutes)
+Seed: 42
+Expected records: 516096
+Completed 16/256 meters
+Completed 32/256 meters
+Completed 48/256 meters
+Completed 64/256 meters
+Completed 80/256 meters
+Completed 96/256 meters
+Completed 112/256 meters
+Completed 128/256 meters
+Completed 144/256 meters
+Completed 160/256 meters
+Completed 176/256 meters
+Completed 192/256 meters
+Completed 208/256 meters
+Completed 224/256 meters
+Completed 240/256 meters
+Completed 256/256 meters
+Saved: data/smart_meter_data.csv
+Saved: data/dataset_info.txt
+Simulation runs faster than wall-clock time; no hardware or cloud is used.
+
+2026-10-19T21:42:14.181714 E:\SmartGrid_OpenMP\benchmark.exe
+Smart Grid Sequential vs OpenMP Benchmark
+Loading data once...
+Meters: 256 | Readings: 516096 | Logical processors exposed: 16
+Trials per configuration: 10 | Workload passes per trial: 11
+A pass refits and evaluates all meters on the same fixed dataset.
+Checking outputs and warming every configuration...
+sequential: PASS (actual threads 1)
+openmp_1: PASS (actual threads 1)
+openmp_2: PASS (actual threads 2)
+openmp_4: PASS (actual threads 4)
+openmp_8: PASS (actual threads 8)
+openmp_12: PASS (actual threads 12)
+openmp_16: PASS (actual threads 16)
+Completed trial 1/10
+Completed trial 2/10
+Completed trial 3/10
+Completed trial 4/10
+Completed trial 5/10
+Completed trial 6/10
+Completed trial 7/10
+Completed trial 8/10
+Completed trial 9/10
+Completed trial 10/10
+
+RESULTS (median compute time per complete workload pass)
+Configuration       Seconds     Speedup    Efficiency
+sequential         0.025590       1.000      100.000%
+openmp_1           0.024840       1.030      103.020%
+openmp_2           0.012736       2.009      100.465%
+openmp_4           0.007589       3.372       84.306%
+openmp_8           0.006522       3.924       49.050%
+openmp_12          0.005194       4.927       41.060%
+openmp_16          0.004893       5.230       32.685%
+
+All correctness checks passed. Saved four benchmark files in results/.
+Speedup below 1 means slower than sequential; retain every measured configuration.
+CPU percent is normalized to all exposed logical processors, not only the requested threads.
+CSV load/export are excluded. Memory footprint and DRAM bandwidth are not measured yet.

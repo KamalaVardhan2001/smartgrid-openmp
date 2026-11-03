@@ -1,0 +1,8 @@
+configuration,status,max_absolute_numeric_difference,absolute_tolerance,relative_tolerance
+sequential,PASS,0,1e-8,1e-10
+openmp_1,PASS,0,1e-8,1e-10
+openmp_2,PASS,0,1e-8,1e-10
+openmp_4,PASS,0,1e-8,1e-10
+openmp_8,PASS,0,1e-8,1e-10
+openmp_12,PASS,0,1e-8,1e-10
+openmp_16,PASS,0,1e-8,1e-10
